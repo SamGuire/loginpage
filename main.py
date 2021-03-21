@@ -1,3 +1,3 @@
 import configparser
-cp = configparser.ConfigParser()
+cp = configparser.ConfigParse
 print(cp.read('./dev_credentials.ini'))
