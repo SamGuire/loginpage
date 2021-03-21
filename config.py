@@ -1,9 +1,9 @@
 import configparser
 
-def config(file_name='dev_credentials.ini',section='dev-postgresql'):
+def config(filename='dev_credentials.ini',section='dev-postgresql'):
         db = {}
         cp = configparser.ConfigParser()
-        cp.read(file_name)
+        cp.read(filename)
         if cp.has_section(section):
                 items = cp.items(section)
                 for item in items:
